@@ -1,0 +1,79 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    touch-action: none;
+    user-select: none;
+    background: linear-gradient(to bottom, #87CEEB, #f0f0f0);
+    font-family: sans-serif;
+}
+
+.game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.basket {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-color: #964B00;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 20px 20px;
+    border: 3px solid #5C3317;
+}
+
+.ball {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 0;
+}
+
+.real-ball { background-color: #e74c3c; }
+.fake-ball { background-color: #2ecc71; }
+.bonus-ball { background-color: #f1c40f; }
+
+.scoreboard {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: red;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: none;
+    text-align: center;
+}
+
+.restart-button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.restart-button:hover {
+    background-color: #2980b9;
+}
